@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
         nav_view.setupWithNavController(navController)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        initFunc()
     }
 
     private fun initFields() {
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunc() {
-
+        setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
     override fun onSupportNavigateUp(): Boolean {
