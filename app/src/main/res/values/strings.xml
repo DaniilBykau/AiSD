@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AiSD</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="input_partition">input</string>
+    <string name="empty">empty</string>
+    <string name="partition_toast_write_numbers">only numbers</string>
 </resources>
