@@ -22,5 +22,17 @@
         <action
             android:id="@+id/action_startFragment_to_partitionFragment"
             app:destination="@id/partitionFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_binaryHeapFragment"
+            app:destination="@id/binaryHeapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/binaryHeapFragment"
+        android:name="com.dziendobry.aisd.ui.fragments.BinaryHeapFragment"
+        android:label="fragment_binary_heap"
+        tools:layout="@layout/fragment_binary_heap" >
+        <action
+            android:id="@+id/action_binaryHeapFragment_to_startFragment"
+            app:destination="@id/startFragment" />
     </fragment>
 </navigation>
