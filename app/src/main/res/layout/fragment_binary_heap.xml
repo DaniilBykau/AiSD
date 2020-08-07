@@ -17,8 +17,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:inputType="text"
             android:autofillHints="@string/nothing"
-            tools:ignore="LabelFor"
-            />
+            tools:ignore="LabelFor" />
 
         <TextView
             android:id="@+id/binary_heap_sorted_array_text_view"
@@ -41,6 +40,16 @@
             android:text="@string/binary_heap_description"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/binary_heap_sorted_array_text_view" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_calculate_binary_heap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_confirm_changes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/default_margin"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

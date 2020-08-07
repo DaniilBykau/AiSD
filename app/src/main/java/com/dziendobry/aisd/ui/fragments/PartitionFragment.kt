@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.dziendobry.aisd.R
 import com.dziendobry.aisd.ui.MainActivity
+import kotlinx.android.synthetic.main.fragment_binary_heap.*
 import kotlinx.android.synthetic.main.fragment_partition.*
 
 
@@ -18,14 +19,12 @@ class PartitionFragment : BaseFragment(R.layout.fragment_partition) {
     private  var output:Int = 0
 
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.confirm_menu -> {
-                checkIfNumbers = true
-                calculate()
-            }
+    override fun onStart() {
+        super.onStart()
+        button_calculate_partition.setOnClickListener {
+            checkIfNumbers = true
+            calculate()
         }
-        return true
     }
 
     private fun calculate() {

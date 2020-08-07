@@ -17,14 +17,12 @@ class BinaryHeapFragment : BaseFragment(R.layout.fragment_binary_heap) {
     private lateinit var sortedArray: String
     private var checkIfNumbers: Boolean = true
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.confirm_menu -> {
-                checkIfNumbers = true
-                calculate()
-            }
+    override fun onStart() {
+        super.onStart()
+        button_calculate_binary_heap.setOnClickListener {
+            checkIfNumbers = true
+            calculate()
         }
-        return true
     }
 
     private fun calculate() {
