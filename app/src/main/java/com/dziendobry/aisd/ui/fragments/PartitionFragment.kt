@@ -1,5 +1,6 @@
 package com.dziendobry.aisd.ui.fragments
 
+import android.os.Bundle
 import android.util.Log
 import android.view.*
 import android.widget.Toast
@@ -9,25 +10,13 @@ import com.dziendobry.aisd.ui.MainActivity
 import kotlinx.android.synthetic.main.fragment_partition.*
 
 
-class PartitionFragment : Fragment(R.layout.fragment_partition) {
+class PartitionFragment : BaseFragment(R.layout.fragment_partition) {
 
     private lateinit var array: String
     private lateinit var sortedArray: String
     private var checkIfNumbers: Boolean = true
     private  var output:Int = 0
 
-    override fun onStart() {
-        super.onStart()
-        setHasOptionsMenu(true)
-    }
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        (activity as MainActivity).menuInflater.inflate(R.menu.confirm_menu, menu)
-    }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
@@ -58,6 +47,7 @@ class PartitionFragment : Fragment(R.layout.fragment_partition) {
         val arrayInt = arrayOfNulls<Int>(array.length)
         for (i in 1..array.length) {
             if (array[i-1].toInt()==32||(array[i-1].toInt() in 48..57)) {
+                //
             }
             else{
                 Toast.makeText(

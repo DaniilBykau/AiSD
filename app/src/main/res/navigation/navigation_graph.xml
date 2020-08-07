@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/partitionFragment"
         android:name="com.dziendobry.aisd.ui.fragments.PartitionFragment"
-        android:label="fragment_partition"
+        android:label="Partition"
         tools:layout="@layout/fragment_partition" >
         <action
             android:id="@+id/action_partitionFragment_to_startFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.dziendobry.aisd.ui.fragments.StartFragment"
-        android:label="fragment_start"
+        android:label="Aisd"
         tools:layout="@layout/fragment_start" >
         <action
             android:id="@+id/action_startFragment_to_partitionFragment"
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/binaryHeapFragment"
         android:name="com.dziendobry.aisd.ui.fragments.BinaryHeapFragment"
-        android:label="fragment_binary_heap"
+        android:label="Binary heap"
         tools:layout="@layout/fragment_binary_heap" >
         <action
             android:id="@+id/action_binaryHeapFragment_to_startFragment"
