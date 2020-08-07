@@ -4,9 +4,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/partitionFragment"
-            android:title="Partition"/>
+            android:title="@string/partition_title"/>
         <item
             android:id="@+id/binaryHeapFragment"
-            android:title="Binary Heap"/>
+            android:title="@string/binary_heap_title"/>
+        <item
+            android:id="@+id/redBlackTreeFragment"
+            android:title="@string/red_black_tree_title"/>
     </group>
 </menu>

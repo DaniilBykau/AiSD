@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_startFragment_to_binaryHeapFragment"
             app:destination="@id/binaryHeapFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_redBlackTreeFragment"
+            app:destination="@id/redBlackTreeFragment" />
     </fragment>
     <fragment
         android:id="@+id/binaryHeapFragment"
@@ -33,6 +36,15 @@
         tools:layout="@layout/fragment_binary_heap" >
         <action
             android:id="@+id/action_binaryHeapFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/redBlackTreeFragment"
+        android:name="com.dziendobry.aisd.ui.fragments.RedBlackTreeFragment"
+        android:label="Red Black Tree"
+        tools:layout="@layout/fragment_red_black_tree" >
+        <action
+            android:id="@+id/action_redBlackTreeFragment_to_startFragment"
             app:destination="@id/startFragment" />
     </fragment>
 </navigation>

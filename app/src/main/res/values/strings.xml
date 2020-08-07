@@ -6,4 +6,7 @@
     <string name="partition_toast_write_numbers">only numbers</string>
     <string name="binary_heap_description">Max - positive numbers, Min - negative numbers. When removing the root element, the most recent element becomes the root element</string>
     <string name="nothing" />
+    <string name="partition_title">Partition</string>
+    <string name="binary_heap_title">Binary Heap</string>
+    <string name="red_black_tree_title">Red Black Tree</string>
 </resources>
