@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_startFragment_to_ONPFragment"
             app:destination="@id/ONPFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_toONPFragment"
+            app:destination="@id/toONPFragment" />
     </fragment>
     <fragment
         android:id="@+id/binaryHeapFragment"
@@ -65,10 +68,19 @@
     <fragment
         android:id="@+id/ONPFragment"
         android:name="com.dziendobry.aisd.ui.fragments.ONPFragment"
-        android:label="ONP"
+        android:label="From ONP"
         tools:layout="@layout/fragment_o_n_p" >
         <action
             android:id="@+id/action_ONPFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toONPFragment"
+        android:name="com.dziendobry.aisd.ui.fragments.ToONPFragment"
+        android:label="To ONP"
+        tools:layout="@layout/fragment_to_o_n_p" >
+        <action
+            android:id="@+id/action_toONPFragment_to_startFragment"
             app:destination="@id/startFragment" />
     </fragment>
 </navigation>

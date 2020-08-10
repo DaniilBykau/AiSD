@@ -17,5 +17,8 @@
         <item
             android:id="@+id/ONPFragment"
             android:title="@string/onp_drawer_menu_title"/>
+        <item
+            android:id="@+id/toONPFragment"
+            android:title="@string/to_onp_drawer_menu_title"/>
     </group>
 </menu>

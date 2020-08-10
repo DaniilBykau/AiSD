@@ -13,6 +13,11 @@
     <string name="edit_text_hint_H">H</string>
     <string name="edit_text_hint_T">T</string>
     <string name="goal_aisd">Ocena</string>
-    <string name="onp_drawer_menu_title">ONP</string>
+    <string name="onp_drawer_menu_title">From ONP</string>
     <string name="error_message">error</string>
+    <string name="hint_plus">+</string>
+    <string name="hint_minus">-</string>
+    <string name="hint_multiplication">*</string>
+    <string name="hint_division">/</string>
+    <string name="to_onp_drawer_menu_title">To ONP</string>
 </resources>
