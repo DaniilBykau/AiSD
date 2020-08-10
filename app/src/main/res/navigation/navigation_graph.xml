@@ -28,6 +28,12 @@
         <action
             android:id="@+id/action_startFragment_to_redBlackTreeFragment"
             app:destination="@id/redBlackTreeFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_BTreeFragment"
+            app:destination="@id/BTreeFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_ONPFragment"
+            app:destination="@id/ONPFragment" />
     </fragment>
     <fragment
         android:id="@+id/binaryHeapFragment"
@@ -45,6 +51,24 @@
         tools:layout="@layout/fragment_red_black_tree" >
         <action
             android:id="@+id/action_redBlackTreeFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BTreeFragment"
+        android:name="com.dziendobry.aisd.ui.fragments.BTreeFragment"
+        android:label="B Tree"
+        tools:layout="@layout/fragment_b_tree" >
+        <action
+            android:id="@+id/action_BTreeFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ONPFragment"
+        android:name="com.dziendobry.aisd.ui.fragments.ONPFragment"
+        android:label="ONP"
+        tools:layout="@layout/fragment_o_n_p" >
+        <action
+            android:id="@+id/action_ONPFragment_to_startFragment"
             app:destination="@id/startFragment" />
     </fragment>
 </navigation>

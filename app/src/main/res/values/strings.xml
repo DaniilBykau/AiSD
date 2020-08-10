@@ -9,4 +9,10 @@
     <string name="partition_title">Partition</string>
     <string name="binary_heap_title">Binary Heap</string>
     <string name="red_black_tree_title">Red Black Tree</string>
+    <string name="b_tree">B Tree</string>
+    <string name="edit_text_hint_H">H</string>
+    <string name="edit_text_hint_T">T</string>
+    <string name="goal_aisd">Ocena</string>
+    <string name="onp_drawer_menu_title">ONP</string>
+    <string name="error_message">error</string>
 </resources>

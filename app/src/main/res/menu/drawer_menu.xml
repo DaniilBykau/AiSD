@@ -11,5 +11,11 @@
         <item
             android:id="@+id/redBlackTreeFragment"
             android:title="@string/red_black_tree_title"/>
+        <item
+            android:id="@+id/BTreeFragment"
+            android:title="@string/b_tree"/>
+        <item
+            android:id="@+id/ONPFragment"
+            android:title="@string/onp_drawer_menu_title"/>
     </group>
 </menu>
