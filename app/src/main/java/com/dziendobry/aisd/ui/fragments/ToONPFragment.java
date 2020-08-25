@@ -89,7 +89,7 @@ public class ToONPFragment extends Fragment {
         int[] arrayInt = new int[array.length()];
         int arraySize = 0;
         for (int i = 1; i <= array.length(); i++){
-            if (array.charAt(i-1)=='*'||(array.charAt(i-1)>='a' && array.charAt(i-1)<='z')||array.charAt(i-1)=='/'||array.charAt(i-1)=='+'||array.charAt(i-1)=='-') {
+            if (array.charAt(i-1)=='*'||(array.charAt(i-1)>='a' && array.charAt(i-1)<='z')||array.charAt(i-1)=='/'||array.charAt(i-1)=='+'||array.charAt(i-1)=='-'||array.charAt(i-1)==')'||array.charAt(i-1)=='(') {
                 //
             }
             else{
